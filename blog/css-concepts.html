@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>Margins Borders and Padding</h1>
+            <h2></h2>
+            <h4 id="post-date">November 29, 2015</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>
+                    So what's with all these properties that sound pretty similar?  Isn't a margin like a border to begin with?
+                </p>
+                <p>
+                    Well, sort of.  There are actually three similar properties that affect all of your HTML elements - padding, border, and margin.  They all extend away from your element in that order, and in all four directions to help space things out on your page.  Or not space them, if that's what you're going for.  You may not actually see them, but they are there.
+                </p>
+                <p>
+                    If you've ever had a picture mounted in a frame and then hung on your wall, it's actually kind of similar.  To start, think of your HTML content (text, picture, link, etc.) as the picture in the frame.  If your frame has a mat to it, where the overall frame is bigger than the picture, maybe a white area to help center the image, that's like HTML padding.  The actual metal or wood frame is your HTML border.  You don't see the padding, but it provides any extra space between your content and the border.
+                </p>
+                <p>
+                    If that's padding and border, there's nothing left in the picture frame analogy, so what's a margin?  Well, let's say you're hanging two pictures on your wall... there's probably a bit of a gap between them, unless you hang them so close that they touch.  That gap in between is your HTML margin.  Similar to padding, you don't really see it, but it helps space things between your other elements.
+                </p>
+                <p>
+                    How about a demonstration.  Below I'll add some boxes with text in them, and then adjust the properties to show how things move around.  In all four examples, the height and width of the element will be the same, but the padding, border, and margin will change.
+                </p>
+                <p>
+                    This first box is our baseline without any changes.  You can see "Some Text" is our content and there's a black border around it.
+                    <div class="concept-divs" id="regular-div">Some Text</div>
+                </p>
+
+                <p>
+                    This next box has some increased padding, and you can see how that has sort of centered the text in the box, because it needs more space between the text and the border.  By changing <span class="sample-code">padding-left: 50px;</span> and <span class="sample-code">padding-top:30px;</span> we will get...
+                    <div class="concept-divs" id="more-padding">Some Text</div>
+                </p>
+
+                <p>
+                    Our next sample has a much wider border, we've gone from 3 pixels wide to 10, by changing <span class="sample-code">border: 10px;</span> we will get...
+                    <div class="concept-divs" id="more-border">Some Text</div>
+                </p>
+
+                <p>
+                    The last example has a bigger margin on the top, which is going to cause it to move farther away from this paragraph, you can compare it to how close the previous boxes were to their paragraphs.  So by changing <span class="sample-code">margin-top: 75px;</span> we will get a bigger gap here...
+                    <div class="concept-divs" id="more-margin">Some Text</div>
+                </p>
+            </section>
+        </main>
+    </body> 
+</html>
