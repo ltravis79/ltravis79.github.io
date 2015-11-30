@@ -1,0 +1,15 @@
+#post-header {
+	height: auto;
+}
+
+#post-date {
+	display:inline;
+}
+
+#blog-home-link {
+	float: right;
+}
+
+#post-header h1{
+	padding-top: 0;
+}
