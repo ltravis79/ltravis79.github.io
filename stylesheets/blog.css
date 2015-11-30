@@ -13,3 +13,27 @@
 #post-header h1{
 	padding-top: 0;
 }
+
+.concept-divs {
+	height: 50px;
+	width: 150px;
+	border: 3px solid black;
+}
+
+#more-padding {
+	padding-left: 50px;
+	padding-top: 30px;
+}
+
+#more-margin {
+	margin-top: 75px;
+}
+
+#more-border {
+	border: 10px solid black;
+}
+
+.sample-code {
+	font-family: "Lucida Console", Monaco, monospace;
+	background-color: lightgray;
+}
