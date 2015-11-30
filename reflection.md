@@ -1,4 +1,4 @@
-(Live Site - http://ltravis79.github.io/)[http://ltravis79.github.io/]
+(Live Site)[http://ltravis79.github.io/]
 
 **What did you learn about CSS padding, borders, and margin by doing this challenge?**
 I've learned that you really need to be aware of the default margins and padding that come with elements, and that they can start to move your other items around unintentionally.
