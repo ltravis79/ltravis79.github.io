@@ -1,0 +1,63 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#header-pic {
+	height: 125px;
+	float: left;
+	/*margin-left: 10px;*/
+	margin-right: 10px;
+}
+
+header {
+	height: 125px;
+	background-color: #3ca1d2;
+}
+
+header h1 {
+	/* height: 100px;*/
+	padding-top: 60px;
+	margin-bottom: 0px;
+}
+
+#navbar {
+	height: 25px;
+	background-color: #d26d3c;
+}
+
+#navbar a {
+	height: 25px;
+
+}
+#navbar a:hover {
+	text-decoration: none;
+	background-color: gold;
+}
+
+aside {
+	width: 175px;
+	float: left;
+	position: relative;
+}
+
+aside p {
+	float: left;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+aside a {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 100%;
+}
+
+#main-content {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#social-media-heading {
+	margin-bottom: 0px;
+}
