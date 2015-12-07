@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>Arrays and Hashes</h1>
+            <h2></h2>
+            <h4 id="post-date">December 6, 2015</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>
+                    Today I'm going to discuss two types of variables you might use while programming - arrays and hashes.  There are some differences (which I'll get to), but both arrays and hashes can be thought of as sort of containers to hold multiple values at the same time.
+                </p>
+
+                <p>
+                    So what are they exactly?  Let's start with an array, which is basically a list of values.  Your array could hold a couple of items or seemingloy go on forever in a really long list.  It could be made up of different things, too.  Maybe you need a list of text values like a grocery list: milk, eggs, cereal, etc.  Or maybe you need a list of numbers like a student's test scores: 97, 82, 93, 85, 73, etc.  Well those could both be arrays!  You can either run through the whole list doing something, or maybe pull out a specific item.  If you need to print out the shopping list you would want everything, but maybe if your student had a question about his third grade you could look that up and tell them it was a 93.
+                </p>
+
+                <p>
+                    A hash is also a little bit like a list, it holds a bunch of data, but instead of just rattling everything off in a line, the data comes in pairs, with something called a key and a value.  While an array keeps things organized in order (the third item, for example), hashes don't really care about the position.  If you want to look up a value from a hash, you ask for its key.  Maybe instead of just a straight list of test scores, you would pair them with a test name: Civil War Quiz might correspond to the 93.
+                </p>
+
+                <p>
+                    So why use one over the other?  That test scores example seems pretty similar since a teacher probably knows that the third grade in their grade book was the Civil War Quiz.  In the case of grades, that may be more suited for an array because the data is pretty similar.  You just need a list of scores, which you can then total up or average at the end of the class to report the student's grades.  Arrays lend themselves to those situations where the data is of the same type.  Hashes on the other hand, are great for storing data that means different things.  Maybe instead of the gradebook, you need to store student profiles.  You can have items in the hash for their first name, last name, phone number, email address, and student ID number.  Those would all make good keys to the hash.
+                </p>
+
+                <p>
+                    How do they work?  Let's start with arrays again.  The syntax in Ruby is to assign the array using brackets and commas between the items.  If you need to retrieve an item from the array, put the item number you want inside brackets following the array variable
+                </p>
+
+                <p class='sample-code'>
+                    groceries = [ 'milk', 'eggs', 'cereal' ]
+                    groceries[0] # would give us 'milk'
+
+                </p>
+                    Hashes get assigned by specifying a list too, but each item in the list is actually a pair of the key and value.  And instead of brackets, you use curly braces, and put an => in between the key and the value, like below.
+                <p>
+
+                <p class='sample-code'>
+                    profile = { 'first_name' => 'Lindsey', 'last_name' => 'Ullman', 'phone' => '555-555-5555', 'email' => 'lindsey.ullman@gmail.com', id => '001' }
+                    profile['first_name'] # would give us 'Lidnsey'
+                </p>
+
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+            </section>
+        </main>
+    </body> 
+</html>
