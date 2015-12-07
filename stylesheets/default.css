@@ -20,16 +20,16 @@ header h1 {
 	margin-bottom: 0px;
 }
 
-#navbar {
+nav {
 	height: 25px;
 	background-color: #d26d3c;
 }
 
-#navbar a {
+nav a {
 	height: 25px;
 
 }
-#navbar a:hover {
+nav a:hover {
 	text-decoration: none;
 	background-color: gold;
 }
@@ -53,7 +53,7 @@ aside a {
 	width: 100%;
 }
 
-#main-content {
+main {
 	margin-left: 12px;
 	margin-right: 12px;
 }
