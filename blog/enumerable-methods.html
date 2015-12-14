@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>The Cycle Enumerable</h1>
+            <h2></h2>
+            <h4 id="post-date">December 13, 2015</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>
+                	In programming there are usually (really almost always) more than one way to do something.  Enumerables are no exception to that.  
+                	Enumerables?  Okay I'll back up a step...
+                </p>
+
+                <p>
+                	So what's an enumerable?  It's sort of like a loop, with a preset number of passes built into it.  You could also think of the word iterate for enumerable.  Let's take the alphabet for example.  If we use an enumerable on it, we'll (most likely) wind up doing something 26 times.  THat's how enumerables work, they go through a set of items.
+                </p>
+
+                <p>
+                	Like I said, there might be more than one way to do things, right?  Let's look into one of these, the cycle enumerator.
+                </p>
+
+                <p>
+                	Let's say you want to not only iterate over a set of items, but you want to do that more than once for the whole set.  We could certainly write a loop, and inside the loop use an enumerable.  But there's also an enumerable that handles both for us at once - cycle.  That's exactly what it does, it works through your enumerable data, and keeps repeating the whole thing, either as many times as you specify, or forever if you don't tell it otherwise.
+                </p>
+
+                <p>
+                	How about an example or two.  Maybe we want to warn someone that we're testing something, so we want to repeat the two sentences "This is a test." and "This is only a test." three times.  Here's how that might work...
+                </p>
+
+                <p>
+                	<pre>messages = ['This is a test.', 'This is only a test.']</pre>
+                	<pre>messages.cycle(3) { |sentence| puts sentence }</pre>
+                </p>
+
+                <p>
+                	That (3) after the word cycle tells Ruby to repeat whatever is in the braces {} 3 times for each item in our list.  What if we want to repeat forever?  Here's another example.  A ship in distress would need to send an SOS to try and get help from other ships.  Sending one single SOS is probably not likely to get you much help, so you keep going over and over.  I'll assume the ship has a way to use a computer to control their radio, otherwise this is just a theorhetical example (and in that case someone should build this so no one has to sit there and type SOS over and over again)...
+                </p>
+
+                <p>
+                	<pre>morse_code_letters = ['...', '---', '...']</pre>
+                	<pre>morse_code_letters.cycle { |code| puts code }</pre>
+                </p>
+
+                <p>
+                	And that's how you might use the cycle enumerable, it repeats things so you don't have to.
+                </p>
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+            </section>
+        </main>
+    </body> 
+</html>
