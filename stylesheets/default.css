@@ -10,32 +10,29 @@ body {
 }
 
 header {
-	height: 125px;
+	height: 8em;
 	background-color: #3ca1d2;
 }
 
 header h1 {
 	/* height: 100px;*/
-	padding-top: 60px;
-	margin-bottom: 0px;
+	padding-top: 2em;
+	margin-bottom: 0em;
 }
 
 nav {
-	height: 25px;
+	height: 1.5em;
 	background-color: #d26d3c;
 }
 
-nav a {
-	height: 25px;
 
-}
 nav a:hover {
 	text-decoration: none;
 	background-color: gold;
 }
 
 aside {
-	width: 175px;
+	width: 7em;
 	float: left;
 	position: relative;
 }
@@ -43,7 +40,7 @@ aside {
 aside p {
 	float: left;
 	font-weight: normal;
-	font-size: 1em;
+	font-size: 0.75em;
 }
 
 aside a {
@@ -54,10 +51,11 @@ aside a {
 }
 
 main {
-	margin-left: 12px;
-	margin-right: 12px;
+	/*margin-left: 12px;*/
+	/*margin-right: 12px;*/
+	width:75%;
 }
 
 #social-media-heading {
-	margin-bottom: 0px;
+	margin-bottom: 0em;
 }
