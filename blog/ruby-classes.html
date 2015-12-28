@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>Ruby Classes</h1>
+            <h2></h2>
+            <h4 id="post-date">December 27, 2015</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>Classes?  Like being in school?  No, that's not what I'm going to talk about today.  
+                This post is referring to classes as a part of programming.
+                </p>
+
+                <p>So if it's not school, what are these classes?  Well, classes in programming are tools 
+                that really help to make your code reusable and flexible.  You could think of them as a sort of 
+                template or blueprint for certain items.  One nice thing about classes is that you can set them 
+                up to represent any model you'd like.  So I guess that actually, classes here COULD be like 
+                classes in school, if that's what you need to do.  Let's look into that...
+                </p>
+
+                <p>We'll go a little broader than school classes and focus on students.  If you were tasked with setting up a 
+                program for a school to manage their students' information, you might set up a class called "student", that helps 
+                to define the characteristics of a student.  What are some things that 
+                are shared by any student enrolled in a school?  Those are the sort of things that can be included in our "template" or 
+                class.
+                <ul>
+                    <li>Student ID Number</li>
+                    <li>Student Name</li>
+                    <li>Emergency Contact</li>
+                    <li>Class Schedule (see, I thought those might turn up)</li>
+                    <li>Grade Point Average</li>
+                    <li>Dormitory</li>
+                    <li>Room Number</li>
+                    </ul>
+                </p>
+
+                <p>That's pretty handy, but there's even more!  Our class might include some actions in addition to characteristics.  What might a 
+                school administrator need to do for a student?
+                <ul>
+                    <li>Add Class</li>
+                    <li>Drop Class</li>
+                    <li>Schedule Advising Appointment</li>
+                    <li>Graduate</li>
+                    <li>Send Tuition Bill</li>
+                    <li>Tuition Payment Received</li>
+                </ul>
+                </p>
+
+                <p>That's great, but how does all this work?  When we program, we set up each real life student as a new object based on our student class.  As soon as that happens, the student's object has it's own set of our characteristics, called instance variables.  If I am a student object "lindsey" my ID number might be 123, my name is Lindsey, and I'll probably have all that other stuff like emergency contacts, and who knows what for a GPA!  At the same time, if I have a roommate named Bill, he's going to have his own student object with a name Bill, maybe ID number 456, and all of his other information.  The beauty of classes and instance variables is that each object's instance variables get remembered, but they don't overlap.  My info is my info, and Bill's is Bill's (although we presumably have the same room number).  Some of the programming in Ruby might look like this below...
+                </p>
+
+                <p><div>
+                    <pre>
+                        class Student
+                            attr_reader :studentID, studentName
+                            attr_writer :emergencyContact
+
+                            def initialize(id, name)
+                                @studentID = id
+                                @studentName = name
+                                @emergencyContact = ''
+                            end
+                        end
+                    </pre>
+                    </div>
+                </p>
+
+                <P><div>
+                    <pre>
+                        lindsey = Student.new(123, "Lindsey")
+                        puts lindsey.atudentID
+                        lindsey.emergencyContact = "Jenny/867-5309"
+                        bill = Student.new(456, "Bill")
+                    </pre>
+                    </div>
+                </P>
+
+                <p>Huh?  Well what's happening up there is this - the first few lines are defining our class called Student.  The two lines that have "attr" on them are some shortcuts to reading and writing our instance variables, we'll get to those in a moment.  The line that says initialize sets up some of our bare minimum information for a student.  In this case when we create a student we assign an ID number and their name.  Maybe they haven't signed up for classes or finished other paperwork, so we start with the minimums.
+                </p>
+
+                <p>The next set of lines are actually utilizing our class for two students - Lindsey and Bill.  The Student.new() lines create our two students using our student class as a template, and send over their IDs and names in the process.  You can also see us puts-ing (meaning displaying) Lindsey's ID number to the screen, and then setting his emergency contact info.  The two attr lines from earlier allow us to do that nice and easily.
+                </p>
+
+                <p>And that's an overview of classes.  You can see from the example that the programming became reusable when we used Student.new.  We only had to provide a little bit of information and the class template did the rest, we didn't have to type out code to assign Lindsey's ID and then his name, then Bill's.  It was all in two simple lines.  All thanks to classes!
+                </p>
+
+
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+            </section>
+        </main>
+    </body> 
+</html>
