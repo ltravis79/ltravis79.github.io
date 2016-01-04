@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>Looping in Ruby vs. JavaScript</h1>
+            <h2></h2>
+            <h4 id="post-date">January 4th, 2016</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>In the world of programming, there's typically a variety of ways to accomplish some given task.  There's also a huge variety of different programming languages.  Some languages can do things that others can't, but there's a lot of overlap between the languages themselves too.  So for some basic functions, like looping, there might be a few ways to do it in one launguage, and a few more in another.  Sometimes they're similar, sometimes they aren't.  You could say it's enough to make you loopy... Yep, I just said that.  It won't happen again I hope...
+                </p>
+
+                <p>Let's talk about loops though for real.  There are different types of loops, but we'll focus on two of the concepts here, and then we'll discuss how Ruby and JavaScript handle them.  One type of loop is called a "while" loop.  It basically keeps going over and over again while something is telling it to.  Maybe a real life example would be that while the waiter keeps bringing me chips and salsa, I'm probably going to keep eating them.  Another loop is the "for" loop.  This one goes through its steps a predetermined number of times.  If a recipe calls for 3 cups of flour, I'm going to measure out 1 cup of flour three times.  It's a little bit like that.
+                </p>
+
+                <p>Let's look at the while loop first.  We'll loop through the numbers from 1 to some mystery number called limit.  Presumably in real life that will mean something in your program.  As of now though, we really don't know.  It could be 2, 5, or 1000.  Here's how the Ruby version looks...
+                <pre>
+                x = 1
+                while x < limit
+                    puts x
+                    x = x + 1
+                end
+                </pre>
+                And now here's the same loop in JavaScript...
+                <pre>
+                x = 1;
+                while (x < limit) {
+                    console.log(x);
+                    x = x + 1;
+                }
+                </pre>
+                You can see they're actually pretty similar.  There are really only a few extra symbols involved in the JavaScript version to define the loop.
+                </p>
+
+                <p>Now how about a for loop.  Let's loop through a set number of things, like the numbers 1 to 5 and print them.  This one is going to look a bit different between the two languages, let's start with Ruby...
+                <pre>
+                for x in 1 .. 5
+                    puts x
+                end
+                </pre>
+                And now the same thing in JavaScript...
+                <pre>
+                for (var x = 1; x <= 5; x++) {
+                    console.log(x);
+                }
+                </pre>
+                </p>
+                <p>So what's happening up there exactly in those for loops?  Well, the Ruby loop takes a variable x and says for every value between 1 and 5, do this stuff.  The "1 .. 5" part is what specifies how many times to run.  The JavaScript one has it's loop controls broken up into those three sections in parentheses, with the semicolons between them.  The first part is the starting value (x = 1).  The next section is the ending value, in a way.  It's actually a little bit like a miniature while loop, in this case, we are saying while x is less than or equal to 5, our ending value.  The last part is the way to get from the starting value to the ending value.  We went with adding one, so this would give us the same values, everything from one to five.
+                </p>
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+            </section>
+        </main>
+    </body> 
+</html>
