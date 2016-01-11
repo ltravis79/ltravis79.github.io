@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby Enumerables Cheat SHeet</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css">
+  </head>
+  <body>
+    <header>
+    	<h1>Ruby Enumerables</h1>
+    </header>
+        
+    <aside id="quick-links">
+      <p>Quick Links</p>
+        <a href="#arrays">Arrays</a>
+        <a href="#arrayseach">.each</a>
+        <a href="#arrayseachindex">.each_index</a>
+        <a href="#arrayscollect">.collect</a>
+        <a href="#arraysreverseeach">.reverse_each</a>
+
+        <a href="#hashes">Hashes</a>
+        <a href="#hasheseach">.each</a>
+        <a href="#hasheseachkey">.each_key</a>
+        <a href="#hasheseachvalue">.each_value</a>
+    </aside>
+
+    <main>
+      <h1 id='arrays'>Arrays</h1>
+      <h2 id='arrayseach'>.each Method</h2>
+      <p><pre>
+        arr.each { |item| statements }
+      </pre>
+      Use the each method to iterate through the array, temporarily storing the value in the item placeholder.
+      </p>
+
+      <h2 id='arrayseachindex'>.each_index Method</h2>
+      <p><pre>
+        arr.each_index { |index| statements }
+      </pre>
+      Use the each_index method to iterate through the array, temporarily storing the index number in the index placeholder, NOT the value from the array.
+      </p>
+
+      <h2 id='arrayscollect'>.collect and .collect! Methods</h2>
+      <p><pre>
+        arr.collect { |item| statements }
+      </pre>
+      While the collect method iterates, it returns the value from the block statements, creating an entirely new array, or replacing the array if using the destructive collect! method.
+      </p>
+
+      <h2 id='arraysreverseeach'>.reverse_each Method</h2>
+      <p><pre>
+        arr.reverse_each { |item| statements }
+      </pre>
+      The reverse_each method is similar the each method, but works backwards through the array instead.
+      </p>
+
+      <h1 id='hashes'>Hashes</h1>
+      <h2 id='hasheseach'>.each Method</h2>
+      <p><pre>
+        hash.each { |key, value| statements }
+      </pre>
+      Use the each method to iterate through the hash, temporarily storing both the current key and value in variables.
+      </p>
+
+      <h2 id='hasheseachkey'>.each_key Method</h2>
+      <p><pre>
+        hash.each { |key| statements }
+      </pre>
+      Use the each_key method to iterate through the hash, temporarily storing only the current key for use.
+      </p>
+
+      <h2 id='hasheseachvalue'>.each_value Method</h2>
+      <p><pre>
+        hash.each_value { |value| statements }
+      </pre>
+      Use the each_value method to iterate through the hash, temporarily storing only the current value for use.
+      </p>
+
+    </main>
+  </body>
+</html>
