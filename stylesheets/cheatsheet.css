@@ -1,0 +1,62 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+header {
+	height: 8em;
+	background-color: #3ca1d2;
+}
+
+header h1 {
+	/* height: 100px;*/
+	padding-top: 2em;
+	margin-bottom: 0em;
+	text-align: center;
+}
+
+
+
+aside {
+	width: 10em;
+	height:100em;
+	float: left;
+	position: relative;
+}
+
+aside p {
+	float: left;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+aside a {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 100%;
+}
+
+aside ul {
+	/*padding-left: 0em;*/
+}
+
+aside li {
+	/*padding-left: 1em;*/
+}
+
+main {
+	/*margin-left: 12px;*/
+	/*margin-right: 12px;*/
+	width:75%;
+}
+
+
+main h1 {
+	font-size: 1em;
+}
+
+main h2 {
+	font-size: 0.75em;
+}
