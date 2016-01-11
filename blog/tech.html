@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Lindsey Learns To Code</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+
+    <body>
+        <header id="post-header">
+            <h1>Sorting</h1>
+            <h2></h2>
+            <h4 id="post-date">January 10, 2016</h4>
+            <a id="blog-home-link" href="index.html">Blog Home</a>
+        </header>
+
+        <main>
+            <section>
+                <p>Sorting items is a pretty common task in programming.  But did you know there are actually different ways to handle sorting?  Not just highest to lowest or lowest to highest... different approaches for handling the actual sort.  Let's talk about some common ones - merge sort, quick sort, and bubble sort.
+                </p>
+
+                <p>Bubble sorting gets your data sorted by comparing two values that are next to each other, and swaps them so that the smaller one is first.  It gets its name because the smaller values sort of "bubble" to the front of the list.  A bubble sort iterates through the list multiple times until it has moved all of the values it needs to move, so it's actually a rather inefficient sorting method.  In the example below, you can see it slowly shift the 1 over to the left.
+                <pre>
+                Step 1 -   3, 5, 1, 7, 9
+                Step 2 -   3, 1, 5, 7, 9
+                Step 3 -   1, 3, 5, 7, 9
+                </pre>
+                </p>
+
+                <p>Merge sorting is done by first breaking your list up into individual items or lists, then merging the adjacent lists back together, comparing the values as they are assembled.
+                <pre>
+                Step 1 -   [2]  [3]  [7]  [1]  [6]  [5]  [4]  [8]
+                Step 2 -   [2, 3]  [1, 7]  [5, 6]  [4, 8]
+                Step 3 -   [1, 2, 3, 7]   [4, 5, 6, 8]
+                Step 4 -   [1, 2, 3, 4, 5, 6, 7, 8]
+                </pre>
+                </p>
+
+                <p>A quick sort is a sorting approach that works by dividing the list of values in two, with a value in the middle used for comparison, called a pivot number.  Values that are smaller shift to the left of the pivot, and higher values go to the right.  Each step rotates a number from the left side over to the right side, and causes the pivot number to move towards its permanent location.  After that, you keep repeating the process on the two halves with new pivot values.  In the example below, we'll pivot with the value 5 initially, then the number 1.
+                <pre>
+                Step 1 -   3, 2, 6, 8, 5, 4, 1
+                Step 2 -   3, 2, 8, 4, 5, 6, 1
+                Step 3 -   3, 2, 1, 4, 5, 6, 8
+                Step 4 -   2, 1, 3, 4, 5, 6, 8
+                Step 5 -   1, 2, 3, 4, 5, 6, 8
+                </pre>
+
+                </p>
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+            </section>
+        </main>
+    </body> 
+</html>
