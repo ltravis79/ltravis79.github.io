@@ -1,3 +1,5 @@
+
+
 #post-header {
 	height: auto;
 }
@@ -35,5 +37,9 @@
 
 .sample-code {
 	font-family: "Lucida Console", Monaco, monospace;
+	background-color: lightgray;
+}
+
+pre {
 	background-color: lightgray;
 }

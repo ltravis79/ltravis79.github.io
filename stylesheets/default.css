@@ -1,5 +1,6 @@
 body {
 	font-family: Verdana, Geneva, sans-serif;
+	background-color: #D0A77D;
 }
 
 #header-pic {
@@ -63,4 +64,10 @@ main {
 
 main h1 {
 	font-size: 1.5em;
+}
+
+#footerline {
+	height: 0.15em;
+	margin-top: 25px;
+	background-color: black;
 }
